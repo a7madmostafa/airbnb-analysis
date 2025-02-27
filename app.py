@@ -12,6 +12,7 @@ df = pd.read_csv("cleaned_airbnb.csv")
 # Initialize Dash app with Bootstrap and Google Fonts
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, components.GOOGLE_FONTS_URL])
 app.title = "NYC Airbnb Analysis"
+server = app.server
 
 # Define app layout
 app.layout = dbc.Container([
